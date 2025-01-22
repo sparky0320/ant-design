@@ -3,6 +3,9 @@ import antfu from '@antfu/eslint-config';
 import compat from 'eslint-plugin-compat';
 import jest from 'eslint-plugin-jest';
 import jsxA11y from 'eslint-plugin-jsx-a11y';
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 export default antfu(
   {
